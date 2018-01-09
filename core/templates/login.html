@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="{{ action_link }}" method="POST">
+    {% csrf_token %}
+    firstname : <input type="text" name="firstname">
+    <br>
+    password : <input type="password" name="password">
+    <br>
+    <input type="submit" value="login">
+</form>
+</body>
+</html>

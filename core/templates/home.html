@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Blizzard</title>
+</head>
+<body>
+    <p>{{ message }} {{ user.get_username }} !</p>
+    {% if user.get_username %}
+        <a href="{{ path_logout }}">Logout</a>
+    {% else %}
+        <a href="{{ path_login }}">Login</a>
+        <a href="{{ path_signup }}">Signup</a>
+    {% endif %}
+</body>
+</html>
